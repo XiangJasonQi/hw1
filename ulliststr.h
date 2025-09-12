@@ -113,6 +113,8 @@ class ULListStr {
    */
   void clear();
 
+  size_t helper_get_loc(size_t loc, Item*& temp) const;
+
  private:
   /** 
    * Returns a pointer to the item at index, loc,
@@ -120,6 +122,8 @@ class ULListStr {
    *   - MUST RUN in O(n) 
    */
   std::string* getValAtLoc(size_t loc) const;
+
+
 
 
   /**
