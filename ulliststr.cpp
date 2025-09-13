@@ -61,7 +61,7 @@ void ULListStr::push_front(const std::string& val){
     head_ = tail_ = new_item;
 
     new_item->val[new_item->first] = val;
-    new_item->last++
+    new_item->last++;
 
   } else if(head_->first > 0){
     head_->first--;
